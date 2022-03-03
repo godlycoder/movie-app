@@ -1,0 +1,29 @@
+apply plugin: Plugins.androidLibrary
+apply from: "$rootDir/common-android.gradle"
+
+
+android {
+    buildTypes {
+
+        def MOVIE_URL = '"https://api.themoviedb.org/3/"'
+        def MOVIE_API_KEY = '"f49ee808a11a2146a99354eba290f92"'
+
+        debug {
+            buildConfigField 'String', 'MOVIE_URL', MOVIE_URL
+            buildConfigField 'String', 'MOVIE_API_KEY', MOVIE_API_KEY
+        }
+    }
+}
+
+dependencies {
+    implementation Libraries.retrofit
+
+    api Libraries.room
+    api Libraries.roomKtx
+    kapt Libraries.roomCompiler
+
+    api Libraries.gson
+
+    implementation Libraries.hawk
+    implementation Libraries.coroutinesPlayService
+}

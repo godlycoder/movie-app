@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="popular_movies">Popular Movies</string>
+    <string name="play_now_movies">Play Now Movies</string>
+    <string name="upcoming_movies">Upcoming Movies</string>
+    <string name="subtitle">Subtitle</string>
+    <string name="title">Title</string>
+    <string name="_5">5</string>
+    <string name="app_name">Movie App</string>
+    <string name="play_now">Play Now</string>
+    <string name="popular">Popular</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="search">Search</string>
+    <string name="retry">Retry</string>
+    <string name="search_any_movie">Search any movie</string>
+</resources>

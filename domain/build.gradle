@@ -1,0 +1,13 @@
+apply plugin: Plugins.androidLibrary
+apply from: "$rootDir/common-android.gradle"
+
+dependencies {
+
+    implementation project(Modules.data)
+    implementation project(Modules.resources)
+
+    api Libraries.liveDataKtx
+    api Libraries.paging
+
+    implementation Libraries.retrofit
+}

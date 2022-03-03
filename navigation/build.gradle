@@ -1,0 +1,10 @@
+apply plugin: Plugins.androidLibrary
+apply from: "$rootDir/common-android.gradle"
+
+dependencies {
+
+    implementation project(Modules.movie)
+
+    api Libraries.navigationFragment
+    api Libraries.navigationUi
+}

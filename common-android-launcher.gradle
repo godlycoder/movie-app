@@ -1,0 +1,27 @@
+apply plugin: Plugins.application
+apply plugin: Plugins.hilt
+apply from: "$rootDir/common-android.gradle"
+
+dependencies {
+
+    implementation project(Modules.core)
+    implementation project(Modules.navigation)
+    implementation project(Modules.data)
+    implementation project(Modules.domain)
+    implementation project(Modules.resources)
+
+    implementation Libraries.hiltAndroid
+    kapt Libraries.hiltCompiler
+
+    implementation Libraries.hiltAndroidXCommon
+    implementation Libraries.hiltAndroidXViewModel
+    kapt Libraries.hiltAndroidXCompiler
+
+    debugImplementation Libraries.leakCanary
+
+    testImplementation Libraries.junit4
+    androidTestImplementation Libraries.junitExt
+    androidTestImplementation Libraries.espresso
+
+//    debugImplementation Libraries.fragmentTest
+}

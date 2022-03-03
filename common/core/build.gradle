@@ -1,0 +1,19 @@
+apply plugin: Plugins.androidLibrary
+apply from: "$rootDir/common-android.gradle"
+
+dependencies {
+
+    implementation project(Modules.resources)
+
+    api SupportLibraries.core
+    api SupportLibraries.appCompat
+    api SupportLibraries.material
+
+    api Libraries.paging
+
+    implementation Libraries.navigationFragment
+    implementation Libraries.navigationUi
+    implementation Libraries.gson
+
+
+}

@@ -1,0 +1,10 @@
+apply plugin: Plugins.androidLibrary
+apply from: "$rootDir/common-android.gradle"
+
+dependencies {
+    implementation SupportLibraries.core
+    implementation SupportLibraries.appCompat
+    implementation SupportLibraries.material
+
+    implementation Libraries.shimmer
+}

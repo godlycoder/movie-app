@@ -1,0 +1,7 @@
+apply from: "$rootDir/common-kotlin.gradle"
+
+dependencies {
+    api Libraries.retrofit
+    implementation Libraries.converterGson
+    implementation Libraries.loggingInterceptor
+}
